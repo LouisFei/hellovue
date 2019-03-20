@@ -3,12 +3,24 @@
     <img src="./assets/logo.png">
     <router-view/>
     <router-view name="hello" />
+    <h1>{{ msg }}</h1>
+    <firstcomponent />
   </div>
 </template>
 
 <script>
+import firstcomponent from './components/firstcomponent.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'Hello my first Vue!'
+    }
+  },
+  components: {
+    firstcomponent
+  }
 }
 </script>
 
