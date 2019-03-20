@@ -11,6 +11,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 // </使用 element-ui (基于Vue的UI框架)>
 
+// 开启 debug模式
+Vue.config.debug = true
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
