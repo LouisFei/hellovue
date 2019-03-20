@@ -5,11 +5,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 使用vue-resource动态加载数据
+import VueResource from 'vue-resource'
 // <使用 element-ui (基于Vue的UI框架)>
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(VueResource)
 Vue.use(ElementUI)
-// </使用 element-ui (基于Vue的UI框架)>
 
 // 开启 debug模式
 Vue.config.debug = true
